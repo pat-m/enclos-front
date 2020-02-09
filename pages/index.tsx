@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {NextPageContext} from "next";
-import Availabilities from "../components/partials/availabilities";
+import AvailabilitiesPartial from "../components/partials/availabilities.partial";
+
 
 
 
@@ -14,7 +15,7 @@ export default class Index extends Component {
     render() {
         return (
             <>
-                <Availabilities/>
+                <AvailabilitiesPartial/>
             </>
         )
 

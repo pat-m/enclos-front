@@ -1,9 +1,10 @@
 import App, {Container} from 'next/app'
 import React from 'react'
 import '../assets/main.scss'
-import Header from "../components/shared/header";
-import Footer from "../components/shared/footer";
+
 import Head from "next/head";
+import HeaderShared from '../components/shared/header.shared';
+import FooterShared from '../components/shared/footer.shared';
 
 interface Props {
     pageProps?: string
@@ -28,9 +29,9 @@ export default class MyApp extends App<Props> {
                 <Head>
                     <title>{pageProps.title}</title>
                 </Head>
-                <Header/>
+                <HeaderShared/>
                 <Component {...pageProps}/>
-                <Footer/>
+                <FooterShared/>
             </>
         )
     }

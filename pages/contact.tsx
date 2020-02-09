@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {NextPageContext} from "next";
+import ContactForm from "../components/forms/contact.form";
 
 export default class Contact extends Component {
 
@@ -10,7 +11,10 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <h1>Contact</h1>
+            <>
+                <h1>Contact</h1>
+                <ContactForm/>
+            </>
         )
     }
 }

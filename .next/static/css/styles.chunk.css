@@ -54,7 +54,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #243238;
   text-align: left;
   background-color: #fff; }
 
@@ -420,7 +420,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #212529;
+  background-color: #243238;
   border-radius: 0.2rem; }
   kbd kbd {
     padding: 0;
@@ -430,7 +430,7 @@ kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529; }
+  color: #243238; }
   pre code {
     font-size: inherit;
     color: inherit;
@@ -440,23 +440,23 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .mre-footer-container {
+.container, .mre-footer-container, .mre-availabilities-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container, .mre-footer-container {
+    .container, .mre-footer-container, .mre-availabilities-container {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container, .mre-footer-container {
+    .container, .mre-footer-container, .mre-availabilities-container {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container, .mre-footer-container {
+    .container, .mre-footer-container, .mre-availabilities-container {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container, .mre-footer-container {
+    .container, .mre-footer-container, .mre-availabilities-container {
       max-width: 1140px; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -467,22 +467,22 @@ pre {
   margin-left: auto; }
 
 @media (min-width: 576px) {
-  .container, .mre-footer-container, .container-sm {
+  .container, .mre-footer-container, .mre-availabilities-container, .container-sm {
     max-width: 540px; } }
 
 @media (min-width: 768px) {
-  .container, .mre-footer-container, .container-sm, .container-md {
+  .container, .mre-footer-container, .mre-availabilities-container, .container-sm, .container-md {
     max-width: 720px; } }
 
 @media (min-width: 992px) {
-  .container, .mre-footer-container, .container-sm, .container-md, .container-lg {
+  .container, .mre-footer-container, .mre-availabilities-container, .container-sm, .container-md, .container-lg {
     max-width: 960px; } }
 
 @media (min-width: 1200px) {
-  .container, .mre-footer-container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .mre-footer-container, .mre-availabilities-container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
-.row, .mre-footer-row {
+.row, .mre-footer-row, .mre-availabilities-row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -497,7 +497,7 @@ pre {
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mre-footer-address, .mre-footer-nav, .mre-footer-social, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mre-footer-address, .mre-footer-nav, .mre-footer-social, .mre-availabilities-tabs, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -727,7 +727,7 @@ pre {
   .col-sm-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  .col-sm-12, .mre-footer-address, .mre-footer-nav, .mre-footer-social {
+  .col-sm-12, .mre-footer-address, .mre-footer-nav, .mre-footer-social, .mre-availabilities-tabs {
     flex: 0 0 100%;
     max-width: 100%; }
   .order-sm-first {
@@ -845,7 +845,7 @@ pre {
   .col-md-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  .col-md-12 {
+  .col-md-12, .mre-availabilities-tabs {
     flex: 0 0 100%;
     max-width: 100%; }
   .order-md-first {
@@ -963,7 +963,7 @@ pre {
   .col-lg-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  .col-lg-12 {
+  .col-lg-12, .mre-availabilities-tabs {
     flex: 0 0 100%;
     max-width: 100%; }
   .order-lg-first {
@@ -1081,7 +1081,7 @@ pre {
   .col-xl-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  .col-xl-12 {
+  .col-xl-12, .mre-availabilities-tabs {
     flex: 0 0 100%;
     max-width: 100%; }
   .order-xl-first {
@@ -1142,7 +1142,7 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529; }
+  color: #243238; }
   .table th,
   .table td {
     padding: 0.75rem;
@@ -1177,7 +1177,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #243238;
   background-color: rgba(0, 0, 0, 0.075); }
 
 .table-primary,
@@ -1467,7 +1467,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #212529;
+  color: #243238;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
@@ -1747,7 +1747,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #243238;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -1763,7 +1763,7 @@ textarea.form-control {
     .btn {
       transition: none; } }
   .btn:hover {
-    color: #212529;
+    color: #243238;
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -1880,30 +1880,30 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5); }
 
 .btn-warning {
-  color: #212529;
+  color: #243238;
   background-color: #ffc107;
   border-color: #ffc107; }
   .btn-warning:hover {
-    color: #212529;
+    color: #243238;
     background-color: #e0a800;
     border-color: #d39e00; }
   .btn-warning:focus, .btn-warning.focus {
-    color: #212529;
+    color: #243238;
     background-color: #e0a800;
     border-color: #d39e00;
-    box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(222, 172, 14, 0.5); }
   .btn-warning.disabled, .btn-warning:disabled {
-    color: #212529;
+    color: #243238;
     background-color: #ffc107;
     border-color: #ffc107; }
   .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
   .show > .btn-warning.dropdown-toggle {
-    color: #212529;
+    color: #243238;
     background-color: #d39e00;
     border-color: #c69500; }
     .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
     .show > .btn-warning.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(222, 172, 14, 0.5); }
 
 .btn-danger {
   color: #fff;
@@ -1932,30 +1932,30 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5); }
 
 .btn-light {
-  color: #212529;
+  color: #243238;
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
   .btn-light:hover {
-    color: #212529;
+    color: #243238;
     background-color: #e2e6ea;
     border-color: #dae0e5; }
   .btn-light:focus, .btn-light.focus {
-    color: #212529;
+    color: #243238;
     background-color: #e2e6ea;
     border-color: #dae0e5;
-    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(216, 219, 221, 0.5); }
   .btn-light.disabled, .btn-light:disabled {
-    color: #212529;
+    color: #243238;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
   .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
   .show > .btn-light.dropdown-toggle {
-    color: #212529;
+    color: #243238;
     background-color: #dae0e5;
     border-color: #d3d9df; }
     .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
     .show > .btn-light.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(216, 219, 221, 0.5); }
 
 .btn-dark {
   color: #fff;
@@ -2071,7 +2071,7 @@ fieldset:disabled a.btn {
   color: #ffc107;
   border-color: #ffc107; }
   .btn-outline-warning:hover {
-    color: #212529;
+    color: #243238;
     background-color: #ffc107;
     border-color: #ffc107; }
   .btn-outline-warning:focus, .btn-outline-warning.focus {
@@ -2081,7 +2081,7 @@ fieldset:disabled a.btn {
     background-color: transparent; }
   .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
   .show > .btn-outline-warning.dropdown-toggle {
-    color: #212529;
+    color: #243238;
     background-color: #ffc107;
     border-color: #ffc107; }
     .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
@@ -2113,7 +2113,7 @@ fieldset:disabled a.btn {
   color: #f8f9fa;
   border-color: #f8f9fa; }
   .btn-outline-light:hover {
-    color: #212529;
+    color: #243238;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
   .btn-outline-light:focus, .btn-outline-light.focus {
@@ -2123,7 +2123,7 @@ fieldset:disabled a.btn {
     background-color: transparent; }
   .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
   .show > .btn-outline-light.dropdown-toggle {
-    color: #212529;
+    color: #243238;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
     .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
@@ -2239,7 +2239,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #243238;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2376,13 +2376,13 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #243238;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: #1a2428;
     text-decoration: none;
     background-color: #f8f9fa; }
   .dropdown-item.active, .dropdown-item:active {
@@ -2408,7 +2408,7 @@ input[type="button"].btn-block {
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1.5rem;
-  color: #212529; }
+  color: #243238; }
 
 .btn-group,
 .btn-group-vertical {
@@ -2693,7 +2693,7 @@ input[type="button"].btn-block {
     pointer-events: none;
     content: "";
     background-color: #fff;
-    border: #adb5bd solid 1px; }
+    border: #b0bec5 solid 1px; }
   .custom-control-label::after {
     position: absolute;
     top: 0.25rem;
@@ -2744,7 +2744,7 @@ input[type="button"].btn-block {
     left: calc(-2.25rem + 2px);
     width: calc(1rem - 4px);
     height: calc(1rem - 4px);
-    background-color: #adb5bd;
+    background-color: #b0bec5;
     border-radius: 0.5rem;
     transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
     @media (prefers-reduced-motion: reduce) {
@@ -2950,15 +2950,15 @@ input[type="button"].btn-block {
     background-color: #dee2e6;
     border-radius: 1rem; }
   .custom-range:disabled::-webkit-slider-thumb {
-    background-color: #adb5bd; }
+    background-color: #b0bec5; }
   .custom-range:disabled::-webkit-slider-runnable-track {
     cursor: default; }
   .custom-range:disabled::-moz-range-thumb {
-    background-color: #adb5bd; }
+    background-color: #b0bec5; }
   .custom-range:disabled::-moz-range-track {
     cursor: default; }
   .custom-range:disabled::-ms-thumb {
-    background-color: #adb5bd; }
+    background-color: #b0bec5; }
 
 .custom-control-label::before,
 .custom-file-label,
@@ -2970,7 +2970,7 @@ input[type="button"].btn-block {
     .custom-select {
       transition: none; } }
 
-.nav, .mre-footer-nav ul {
+.nav, .mre-footer-nav ul, .mre-availabilities-tabs-nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -2987,44 +2987,57 @@ input[type="button"].btn-block {
     pointer-events: none;
     cursor: default; }
 
-.nav-tabs {
+.nav-tabs, .mre-availabilities-tabs-nav {
   border-bottom: 1px solid #dee2e6; }
-  .nav-tabs .nav-item, .nav-tabs .mre-header-nav-collapse ul li, .mre-header-nav-collapse ul .nav-tabs li, .nav-tabs .mre-footer-nav ul li, .mre-footer-nav ul .nav-tabs li {
+  .nav-tabs .nav-item, .mre-availabilities-tabs-nav .nav-item, .nav-tabs .mre-header-nav-collapse ul li, .mre-header-nav-collapse ul .nav-tabs li, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li, .mre-header-nav-collapse ul .mre-availabilities-tabs-nav li, .nav-tabs .mre-footer-nav ul li, .mre-footer-nav ul .nav-tabs li, .mre-availabilities-tabs-nav .mre-footer-nav ul li, .mre-footer-nav ul .mre-availabilities-tabs-nav li {
     margin-bottom: -1px; }
-  .nav-tabs .nav-link, .nav-tabs .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .nav-tabs a, .nav-tabs .mre-footer-nav ul li a, .mre-footer-nav ul li .nav-tabs a {
+  .nav-tabs .nav-link, .mre-availabilities-tabs-nav .nav-link, .nav-tabs .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .nav-tabs a, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav a, .nav-tabs .mre-footer-nav ul li a, .mre-footer-nav ul li .nav-tabs a, .mre-availabilities-tabs-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .mre-availabilities-tabs-nav a {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-    .nav-tabs .nav-link:hover, .nav-tabs .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .nav-tabs a:hover, .nav-tabs .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .nav-tabs a:hover, .nav-tabs .nav-link:focus, .nav-tabs .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .nav-tabs a:focus, .nav-tabs .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .nav-tabs a:focus {
+    .nav-tabs .nav-link:hover, .mre-availabilities-tabs-nav .nav-link:hover, .nav-tabs .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .nav-tabs a:hover, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav a:hover, .nav-tabs .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .nav-tabs a:hover, .mre-availabilities-tabs-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .mre-availabilities-tabs-nav a:hover, .nav-tabs .nav-link:focus, .mre-availabilities-tabs-nav .nav-link:focus, .nav-tabs .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .nav-tabs a:focus, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav a:focus, .nav-tabs .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .nav-tabs a:focus, .mre-availabilities-tabs-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .mre-availabilities-tabs-nav a:focus {
       border-color: #e9ecef #e9ecef #dee2e6; }
-    .nav-tabs .nav-link.disabled, .nav-tabs .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .nav-tabs a.disabled, .nav-tabs .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .nav-tabs a.disabled {
+    .nav-tabs .nav-link.disabled, .mre-availabilities-tabs-nav .nav-link.disabled, .nav-tabs .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .nav-tabs a.disabled, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav a.disabled, .nav-tabs .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .nav-tabs a.disabled, .mre-availabilities-tabs-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .mre-availabilities-tabs-nav a.disabled {
       color: #6c757d;
       background-color: transparent;
       border-color: transparent; }
-  .nav-tabs .nav-link.active, .nav-tabs .mre-header-nav-collapse ul li a.active, .mre-header-nav-collapse ul li .nav-tabs a.active, .nav-tabs .mre-footer-nav ul li a.active, .mre-footer-nav ul li .nav-tabs a.active,
+  .nav-tabs .nav-link.active, .mre-availabilities-tabs-nav .nav-link.active, .nav-tabs .mre-header-nav-collapse ul li a.active, .mre-header-nav-collapse ul li .nav-tabs a.active, .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li a.active, .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav a.active, .nav-tabs .mre-footer-nav ul li a.active, .mre-footer-nav ul li .nav-tabs a.active, .mre-availabilities-tabs-nav .mre-footer-nav ul li a.active, .mre-footer-nav ul li .mre-availabilities-tabs-nav a.active,
   .nav-tabs .nav-item.show .nav-link,
+  .mre-availabilities-tabs-nav .nav-item.show .nav-link,
   .nav-tabs .mre-header-nav-collapse ul li.show .nav-link,
   .mre-header-nav-collapse ul .nav-tabs li.show .nav-link,
+  .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li.show .nav-link,
+  .mre-header-nav-collapse ul .mre-availabilities-tabs-nav li.show .nav-link,
   .nav-tabs .mre-footer-nav ul li.show .nav-link,
   .mre-footer-nav ul .nav-tabs li.show .nav-link,
+  .mre-availabilities-tabs-nav .mre-footer-nav ul li.show .nav-link,
+  .mre-footer-nav ul .mre-availabilities-tabs-nav li.show .nav-link,
   .nav-tabs .nav-item.show .mre-header-nav-collapse ul li a,
   .mre-header-nav-collapse ul li .nav-tabs .nav-item.show a,
+  .mre-availabilities-tabs-nav .nav-item.show .mre-header-nav-collapse ul li a,
+  .mre-header-nav-collapse ul li .mre-availabilities-tabs-nav .nav-item.show a,
   .nav-tabs .mre-header-nav-collapse ul li.show a,
   .mre-header-nav-collapse ul .nav-tabs li.show a,
+  .mre-availabilities-tabs-nav .mre-header-nav-collapse ul li.show a,
+  .mre-header-nav-collapse ul .mre-availabilities-tabs-nav li.show a,
   .nav-tabs .mre-footer-nav .mre-header-nav-collapse ul li.show a,
   .mre-header-nav-collapse .nav-tabs .mre-footer-nav ul li.show a,
   .nav-tabs .nav-item.show .mre-footer-nav ul li a,
   .mre-footer-nav ul li .nav-tabs .nav-item.show a,
+  .mre-availabilities-tabs-nav .nav-item.show .mre-footer-nav ul li a,
+  .mre-footer-nav ul li .mre-availabilities-tabs-nav .nav-item.show a,
   .nav-tabs .mre-header-nav-collapse .mre-footer-nav ul li.show a,
   .mre-footer-nav .nav-tabs .mre-header-nav-collapse ul li.show a,
   .mre-header-nav-collapse .mre-footer-nav ul .nav-tabs li.show a,
   .mre-footer-nav .mre-header-nav-collapse ul .nav-tabs li.show a,
   .nav-tabs .mre-footer-nav ul li.show a,
-  .mre-footer-nav ul .nav-tabs li.show a {
+  .mre-footer-nav ul .nav-tabs li.show a,
+  .mre-availabilities-tabs-nav .mre-footer-nav ul li.show a,
+  .mre-footer-nav ul .mre-availabilities-tabs-nav li.show a {
     color: #495057;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
-  .nav-tabs .dropdown-menu {
+  .nav-tabs .dropdown-menu, .mre-availabilities-tabs-nav .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -3063,7 +3076,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar .container, .mre-header-nav .container, .navbar .mre-footer-container, .mre-header-nav .mre-footer-container,
+  .navbar .container, .mre-header-nav .container, .navbar .mre-footer-container, .mre-header-nav .mre-footer-container, .navbar .mre-availabilities-container, .mre-header-nav .mre-availabilities-container,
   .navbar .container-fluid,
   .mre-header-nav .container-fluid, .navbar .container-sm, .mre-header-nav .container-sm, .navbar .container-md, .mre-header-nav .container-md, .navbar .container-lg, .mre-header-nav .container-lg, .navbar .container-xl, .mre-header-nav .container-xl {
     display: flex;
@@ -3125,7 +3138,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .mre-footer-container,
+  .navbar-expand-sm > .container, .navbar-expand-sm > .mre-footer-container, .navbar-expand-sm > .mre-availabilities-container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3141,7 +3154,7 @@ input[type="button"].btn-block {
       .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-expand-sm ul .nav-link, .navbar-expand-sm .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-expand-sm .navbar-nav a, .navbar-expand-sm .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-sm ul li a, .navbar-expand-sm .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-expand-sm .navbar-nav a, .navbar-expand-sm .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-expand-sm .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-sm .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-expand-sm ul li a {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container, .navbar-expand-sm > .mre-footer-container,
+    .navbar-expand-sm > .container, .navbar-expand-sm > .mre-footer-container, .navbar-expand-sm > .mre-availabilities-container,
     .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse, .navbar-expand-sm .mre-header-nav-collapse {
@@ -3151,7 +3164,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .mre-footer-container,
+  .navbar-expand-md > .container, .navbar-expand-md > .mre-footer-container, .navbar-expand-md > .mre-availabilities-container,
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3167,7 +3180,7 @@ input[type="button"].btn-block {
       .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-expand-md ul .nav-link, .navbar-expand-md .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-expand-md .navbar-nav a, .navbar-expand-md .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-md ul li a, .navbar-expand-md .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-expand-md .navbar-nav a, .navbar-expand-md .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-expand-md .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-md .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-expand-md ul li a {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container, .navbar-expand-md > .mre-footer-container,
+    .navbar-expand-md > .container, .navbar-expand-md > .mre-footer-container, .navbar-expand-md > .mre-availabilities-container,
     .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-md .navbar-collapse, .navbar-expand-md .mre-header-nav-collapse {
@@ -3177,7 +3190,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .mre-header-nav .navbar-expand-lg > .container, .navbar-expand-lg .mre-header-nav > .container, .mre-header-nav > .container, .navbar-expand-lg > .mre-footer-container, .mre-header-nav .navbar-expand-lg > .mre-footer-container, .navbar-expand-lg .mre-header-nav > .mre-footer-container, .mre-header-nav > .mre-footer-container,
+  .navbar-expand-lg > .container, .mre-header-nav .navbar-expand-lg > .container, .navbar-expand-lg .mre-header-nav > .container, .mre-header-nav > .container, .navbar-expand-lg > .mre-footer-container, .mre-header-nav .navbar-expand-lg > .mre-footer-container, .navbar-expand-lg .mre-header-nav > .mre-footer-container, .mre-header-nav > .mre-footer-container, .navbar-expand-lg > .mre-availabilities-container, .mre-header-nav .navbar-expand-lg > .mre-availabilities-container, .navbar-expand-lg .mre-header-nav > .mre-availabilities-container, .mre-header-nav > .mre-availabilities-container,
   .navbar-expand-lg > .container-fluid,
   .mre-header-nav .navbar-expand-lg > .container-fluid,
   .navbar-expand-lg .mre-header-nav > .container-fluid,
@@ -3196,7 +3209,7 @@ input[type="button"].btn-block {
       .navbar-expand-lg .navbar-nav .nav-link, .mre-header-nav .navbar-nav .nav-link, .navbar-expand-lg .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-expand-lg ul .nav-link, .mre-header-nav .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .mre-header-nav ul .nav-link, .navbar-expand-lg .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-expand-lg .navbar-nav a, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a, .navbar-expand-lg .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-lg ul li a, .mre-header-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .mre-header-nav ul li a, .navbar-expand-lg .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-expand-lg .navbar-nav a, .mre-header-nav .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .mre-header-nav .navbar-nav a, .navbar-expand-lg .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-expand-lg .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-lg .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-expand-lg ul li a {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container, .mre-header-nav .navbar-expand-lg > .container, .navbar-expand-lg .mre-header-nav > .container, .mre-header-nav > .container, .navbar-expand-lg > .mre-footer-container, .mre-header-nav .navbar-expand-lg > .mre-footer-container, .navbar-expand-lg .mre-header-nav > .mre-footer-container, .mre-header-nav > .mre-footer-container,
+    .navbar-expand-lg > .container, .mre-header-nav .navbar-expand-lg > .container, .navbar-expand-lg .mre-header-nav > .container, .mre-header-nav > .container, .navbar-expand-lg > .mre-footer-container, .mre-header-nav .navbar-expand-lg > .mre-footer-container, .navbar-expand-lg .mre-header-nav > .mre-footer-container, .mre-header-nav > .mre-footer-container, .navbar-expand-lg > .mre-availabilities-container, .mre-header-nav .navbar-expand-lg > .mre-availabilities-container, .navbar-expand-lg .mre-header-nav > .mre-availabilities-container, .mre-header-nav > .mre-availabilities-container,
     .navbar-expand-lg > .container-fluid,
     .mre-header-nav .navbar-expand-lg > .container-fluid,
     .navbar-expand-lg .mre-header-nav > .container-fluid,
@@ -3209,7 +3222,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .mre-footer-container,
+  .navbar-expand-xl > .container, .navbar-expand-xl > .mre-footer-container, .navbar-expand-xl > .mre-availabilities-container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3225,7 +3238,7 @@ input[type="button"].btn-block {
       .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-expand-xl ul .nav-link, .navbar-expand-xl .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-expand-xl .navbar-nav a, .navbar-expand-xl .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-xl ul li a, .navbar-expand-xl .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-expand-xl .navbar-nav a, .navbar-expand-xl .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-expand-xl .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand-xl .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-expand-xl ul li a {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container, .navbar-expand-xl > .mre-footer-container,
+    .navbar-expand-xl > .container, .navbar-expand-xl > .mre-footer-container, .navbar-expand-xl > .mre-availabilities-container,
     .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-xl .navbar-collapse, .navbar-expand-xl .mre-header-nav-collapse {
@@ -3237,7 +3250,7 @@ input[type="button"].btn-block {
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start; }
-  .navbar-expand > .container, .navbar-expand > .mre-footer-container,
+  .navbar-expand > .container, .navbar-expand > .mre-footer-container, .navbar-expand > .mre-availabilities-container,
   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
     padding-right: 0;
     padding-left: 0; }
@@ -3248,7 +3261,7 @@ input[type="button"].btn-block {
     .navbar-expand .navbar-nav .nav-link, .navbar-expand .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-expand ul .nav-link, .navbar-expand .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-expand .navbar-nav a, .navbar-expand .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand ul li a, .navbar-expand .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-expand .navbar-nav a, .navbar-expand .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-expand .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-expand .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-expand ul li a {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container, .navbar-expand > .mre-footer-container,
+  .navbar-expand > .container, .navbar-expand > .mre-footer-container, .navbar-expand > .mre-availabilities-container,
   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
     flex-wrap: nowrap; }
   .navbar-expand .navbar-collapse, .navbar-expand .mre-header-nav-collapse {
@@ -3257,171 +3270,171 @@ input[type="button"].btn-block {
   .navbar-expand .navbar-toggler, .navbar-expand .mre-header-nav > button {
     display: none; }
 
-.navbar-light .navbar-brand, .mre-header-nav .navbar-brand {
+.navbar-light .navbar-brand {
   color: rgba(0, 0, 0, 0.9); }
-  .navbar-light .navbar-brand:hover, .mre-header-nav .navbar-brand:hover, .navbar-light .navbar-brand:focus, .mre-header-nav .navbar-brand:focus {
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: rgba(0, 0, 0, 0.9); }
 
-.navbar-light .navbar-nav .nav-link, .mre-header-nav .navbar-nav .nav-link, .navbar-light .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-light ul .nav-link, .mre-header-nav .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .mre-header-nav ul .nav-link, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a, .navbar-light .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-light ul li a, .mre-header-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .mre-header-nav ul li a, .navbar-light .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-light .navbar-nav a, .mre-header-nav .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .mre-header-nav .navbar-nav a, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-light ul .nav-link, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a, .navbar-light .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-light ul li a, .navbar-light .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-light .navbar-nav a, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a {
   color: rgba(0, 0, 0, 0.5); }
-  .navbar-light .navbar-nav .nav-link:hover, .mre-header-nav .navbar-nav .nav-link:hover, .navbar-light .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .navbar-light ul .nav-link:hover, .mre-header-nav .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .mre-header-nav ul .nav-link:hover, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a:hover, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a:hover, .navbar-light .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-light ul li a:hover, .mre-header-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .mre-header-nav ul li a:hover, .navbar-light .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .navbar-light .navbar-nav a:hover, .mre-header-nav .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .mre-header-nav .navbar-nav a:hover, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a:hover, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a:hover, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a:hover, .navbar-light .navbar-nav .nav-link:focus, .mre-header-nav .navbar-nav .nav-link:focus, .navbar-light .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .navbar-light ul .nav-link:focus, .mre-header-nav .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .mre-header-nav ul .nav-link:focus, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a:focus, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a:focus, .navbar-light .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-light ul li a:focus, .mre-header-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .mre-header-nav ul li a:focus, .navbar-light .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .navbar-light .navbar-nav a:focus, .mre-header-nav .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .mre-header-nav .navbar-nav a:focus, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a:focus, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a:focus, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a:focus {
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .navbar-light ul .nav-link:hover, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a:hover, .navbar-light .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-light ul li a:hover, .navbar-light .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .navbar-light .navbar-nav a:hover, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a:hover, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a:hover, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .navbar-light ul .nav-link:focus, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a:focus, .navbar-light .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-light ul li a:focus, .navbar-light .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .navbar-light .navbar-nav a:focus, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a:focus, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a:focus, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a:focus {
     color: rgba(0, 0, 0, 0.7); }
-  .navbar-light .navbar-nav .nav-link.disabled, .mre-header-nav .navbar-nav .nav-link.disabled, .navbar-light .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .navbar-light ul .nav-link.disabled, .mre-header-nav .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .mre-header-nav ul .nav-link.disabled, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a.disabled, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.disabled, .navbar-light .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-light ul li a.disabled, .mre-header-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .mre-header-nav ul li a.disabled, .navbar-light .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .navbar-light .navbar-nav a.disabled, .mre-header-nav .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .mre-header-nav .navbar-nav a.disabled, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a.disabled, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a.disabled, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a.disabled {
+  .navbar-light .navbar-nav .nav-link.disabled, .navbar-light .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .navbar-light ul .nav-link.disabled, .navbar-light .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .navbar-light .navbar-nav a.disabled, .navbar-light .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-light ul li a.disabled, .navbar-light .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .navbar-light .navbar-nav a.disabled, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a.disabled, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a.disabled, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
-.navbar-light .navbar-nav .show > .nav-link, .mre-header-nav .navbar-nav .show > .nav-link, .navbar-light .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .navbar-light ul .show > .nav-link, .mre-header-nav .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .mre-header-nav ul .show > .nav-link, .navbar-light .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .navbar-light .navbar-nav .show > a, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav .show > a, .navbar-light .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-light ul li .show > a, .mre-header-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .mre-header-nav ul li .show > a, .navbar-light .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .navbar-light .navbar-nav .show > a, .mre-header-nav .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .mre-header-nav .navbar-nav .show > a, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li .show > a, .mre-header-nav .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .mre-header-nav .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .mre-header-nav ul li .show > a,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .navbar-light ul .show > .nav-link, .navbar-light .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .navbar-light .navbar-nav .show > a, .navbar-light .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-light ul li .show > a, .navbar-light .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .navbar-light .navbar-nav .show > a, .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li .show > a,
 .navbar-light .navbar-nav .active > .nav-link,
-.mre-header-nav .navbar-nav .active > .nav-link,
 .navbar-light .mre-header-nav-collapse ul .active > .nav-link,
 .mre-header-nav-collapse .navbar-light ul .active > .nav-link,
-.mre-header-nav .mre-header-nav-collapse ul .active > .nav-link,
-.mre-header-nav-collapse .mre-header-nav ul .active > .nav-link,
 .navbar-light .navbar-nav .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse ul li .navbar-light .navbar-nav .active > a,
-.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li .active > a,
-.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav .active > a,
 .navbar-light .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse .navbar-light ul li .active > a,
-.mre-header-nav .mre-header-nav-collapse ul li .active > a,
-.mre-header-nav-collapse .mre-header-nav ul li .active > a,
 .navbar-light .navbar-nav .mre-footer-nav ul li .active > a,
 .mre-footer-nav ul li .navbar-light .navbar-nav .active > a,
-.mre-header-nav .navbar-nav .mre-footer-nav ul li .active > a,
-.mre-footer-nav ul li .mre-header-nav .navbar-nav .active > a,
 .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li .active > a,
 .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li .active > a,
 .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li .active > a,
-.mre-header-nav .mre-header-nav-collapse .mre-footer-nav ul li .active > a,
-.mre-footer-nav .mre-header-nav .mre-header-nav-collapse ul li .active > a,
-.mre-header-nav-collapse .mre-header-nav .mre-footer-nav ul li .active > a,
-.mre-footer-nav .mre-header-nav-collapse .mre-header-nav ul li .active > a,
 .navbar-light .navbar-nav .nav-link.show,
-.mre-header-nav .navbar-nav .nav-link.show,
 .navbar-light .mre-header-nav-collapse ul .nav-link.show,
 .mre-header-nav-collapse .navbar-light ul .nav-link.show,
-.mre-header-nav .mre-header-nav-collapse ul .nav-link.show,
-.mre-header-nav-collapse .mre-header-nav ul .nav-link.show,
 .navbar-light .navbar-nav .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse ul li .navbar-light .navbar-nav a.show,
-.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.show,
-.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.show,
 .navbar-light .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse .navbar-light ul li a.show,
-.mre-header-nav .mre-header-nav-collapse ul li a.show,
-.mre-header-nav-collapse .mre-header-nav ul li a.show,
 .navbar-light .navbar-nav .mre-footer-nav ul li a.show,
 .mre-footer-nav ul li .navbar-light .navbar-nav a.show,
-.mre-header-nav .navbar-nav .mre-footer-nav ul li a.show,
-.mre-footer-nav ul li .mre-header-nav .navbar-nav a.show,
 .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a.show,
 .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a.show,
 .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a.show,
 .navbar-light .navbar-nav .nav-link.active,
-.mre-header-nav .navbar-nav .nav-link.active,
 .navbar-light .mre-header-nav-collapse ul .nav-link.active,
 .mre-header-nav-collapse .navbar-light ul .nav-link.active,
-.mre-header-nav .mre-header-nav-collapse ul .nav-link.active,
-.mre-header-nav-collapse .mre-header-nav ul .nav-link.active,
 .navbar-light .navbar-nav .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse ul li .navbar-light .navbar-nav a.active,
-.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.active,
-.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.active,
 .navbar-light .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse .navbar-light ul li a.active,
-.mre-header-nav .mre-header-nav-collapse ul li a.active,
-.mre-header-nav-collapse .mre-header-nav ul li a.active,
 .navbar-light .navbar-nav .mre-footer-nav ul li a.active,
 .mre-footer-nav ul li .navbar-light .navbar-nav a.active,
-.mre-header-nav .navbar-nav .mre-footer-nav ul li a.active,
-.mre-footer-nav ul li .mre-header-nav .navbar-nav a.active,
 .navbar-light .mre-header-nav-collapse .mre-footer-nav ul li a.active,
 .mre-footer-nav .navbar-light .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse .navbar-light .mre-footer-nav ul li a.active,
 .mre-footer-nav .mre-header-nav-collapse .navbar-light ul li a.active {
   color: rgba(0, 0, 0, 0.9); }
 
-.navbar-light .navbar-toggler, .mre-header-nav .navbar-toggler, .navbar-light .mre-header-nav > button, .mre-header-nav > button {
+.navbar-light .navbar-toggler, .navbar-light .mre-header-nav > button {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
 
-.navbar-light .navbar-toggler-icon, .mre-header-nav .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
-.navbar-light .navbar-text, .mre-header-nav .navbar-text {
+.navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
-  .navbar-light .navbar-text a, .mre-header-nav .navbar-text a {
+  .navbar-light .navbar-text a {
     color: rgba(0, 0, 0, 0.9); }
-    .navbar-light .navbar-text a:hover, .mre-header-nav .navbar-text a:hover, .navbar-light .navbar-text a:focus, .mre-header-nav .navbar-text a:focus {
+    .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
       color: rgba(0, 0, 0, 0.9); }
 
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand, .mre-header-nav .navbar-brand {
   color: #fff; }
-  .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  .navbar-dark .navbar-brand:hover, .mre-header-nav .navbar-brand:hover, .navbar-dark .navbar-brand:focus, .mre-header-nav .navbar-brand:focus {
     color: #fff; }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-dark ul .nav-link, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a, .navbar-dark .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-dark ul li a, .navbar-dark .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-dark .navbar-nav a, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a {
-  color: rgba(255, 255, 255, 0.5); }
-  .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .navbar-dark ul .nav-link:hover, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a:hover, .navbar-dark .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-dark ul li a:hover, .navbar-dark .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .navbar-dark .navbar-nav a:hover, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a:hover, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a:hover, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .navbar-dark ul .nav-link:focus, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-dark ul li a:focus, .navbar-dark .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a:focus, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a:focus, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a:focus {
+.navbar-dark .navbar-nav .nav-link, .mre-header-nav .navbar-nav .nav-link, .navbar-dark .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .navbar-dark ul .nav-link, .mre-header-nav .mre-header-nav-collapse ul .nav-link, .mre-header-nav-collapse .mre-header-nav ul .nav-link, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a, .navbar-dark .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-dark ul li a, .mre-header-nav .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .mre-header-nav ul li a, .navbar-dark .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .navbar-dark .navbar-nav a, .mre-header-nav .navbar-nav .mre-footer-nav ul li a, .mre-footer-nav ul li .mre-header-nav .navbar-nav a, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a {
+  color: #b0bec5; }
+  .navbar-dark .navbar-nav .nav-link:hover, .mre-header-nav .navbar-nav .nav-link:hover, .navbar-dark .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .navbar-dark ul .nav-link:hover, .mre-header-nav .mre-header-nav-collapse ul .nav-link:hover, .mre-header-nav-collapse .mre-header-nav ul .nav-link:hover, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a:hover, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a:hover, .navbar-dark .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-dark ul li a:hover, .mre-header-nav .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .mre-header-nav ul li a:hover, .navbar-dark .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .navbar-dark .navbar-nav a:hover, .mre-header-nav .navbar-nav .mre-footer-nav ul li a:hover, .mre-footer-nav ul li .mre-header-nav .navbar-nav a:hover, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a:hover, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a:hover, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a:hover, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a:hover, .navbar-dark .navbar-nav .nav-link:focus, .mre-header-nav .navbar-nav .nav-link:focus, .navbar-dark .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .navbar-dark ul .nav-link:focus, .mre-header-nav .mre-header-nav-collapse ul .nav-link:focus, .mre-header-nav-collapse .mre-header-nav ul .nav-link:focus, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a:focus, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a:focus, .navbar-dark .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-dark ul li a:focus, .mre-header-nav .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .mre-header-nav ul li a:focus, .navbar-dark .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .navbar-dark .navbar-nav a:focus, .mre-header-nav .navbar-nav .mre-footer-nav ul li a:focus, .mre-footer-nav ul li .mre-header-nav .navbar-nav a:focus, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a:focus, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a:focus, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a:focus, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a:focus {
     color: rgba(255, 255, 255, 0.75); }
-  .navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .navbar-dark ul .nav-link.disabled, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a.disabled, .navbar-dark .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-dark ul li a.disabled, .navbar-dark .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .navbar-dark .navbar-nav a.disabled, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a.disabled, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a.disabled, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a.disabled {
+  .navbar-dark .navbar-nav .nav-link.disabled, .mre-header-nav .navbar-nav .nav-link.disabled, .navbar-dark .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .navbar-dark ul .nav-link.disabled, .mre-header-nav .mre-header-nav-collapse ul .nav-link.disabled, .mre-header-nav-collapse .mre-header-nav ul .nav-link.disabled, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a.disabled, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.disabled, .navbar-dark .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-dark ul li a.disabled, .mre-header-nav .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .mre-header-nav ul li a.disabled, .navbar-dark .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .navbar-dark .navbar-nav a.disabled, .mre-header-nav .navbar-nav .mre-footer-nav ul li a.disabled, .mre-footer-nav ul li .mre-header-nav .navbar-nav a.disabled, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a.disabled, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a.disabled, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a.disabled, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a.disabled {
     color: rgba(255, 255, 255, 0.25); }
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .navbar-dark ul .show > .nav-link, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav .show > a, .navbar-dark .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-dark ul li .show > a, .navbar-dark .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .navbar-dark .navbar-nav .show > a, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li .show > a,
+.navbar-dark .navbar-nav .show > .nav-link, .mre-header-nav .navbar-nav .show > .nav-link, .navbar-dark .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .navbar-dark ul .show > .nav-link, .mre-header-nav .mre-header-nav-collapse ul .show > .nav-link, .mre-header-nav-collapse .mre-header-nav ul .show > .nav-link, .navbar-dark .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .navbar-dark .navbar-nav .show > a, .mre-header-nav .navbar-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse ul li .mre-header-nav .navbar-nav .show > a, .navbar-dark .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-dark ul li .show > a, .mre-header-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .mre-header-nav ul li .show > a, .navbar-dark .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .navbar-dark .navbar-nav .show > a, .mre-header-nav .navbar-nav .mre-footer-nav ul li .show > a, .mre-footer-nav ul li .mre-header-nav .navbar-nav .show > a, .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li .show > a, .mre-header-nav .mre-header-nav-collapse .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav .mre-header-nav-collapse ul li .show > a, .mre-header-nav-collapse .mre-header-nav .mre-footer-nav ul li .show > a, .mre-footer-nav .mre-header-nav-collapse .mre-header-nav ul li .show > a,
 .navbar-dark .navbar-nav .active > .nav-link,
+.mre-header-nav .navbar-nav .active > .nav-link,
 .navbar-dark .mre-header-nav-collapse ul .active > .nav-link,
 .mre-header-nav-collapse .navbar-dark ul .active > .nav-link,
+.mre-header-nav .mre-header-nav-collapse ul .active > .nav-link,
+.mre-header-nav-collapse .mre-header-nav ul .active > .nav-link,
 .navbar-dark .navbar-nav .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse ul li .navbar-dark .navbar-nav .active > a,
+.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li .active > a,
+.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav .active > a,
 .navbar-dark .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse .navbar-dark ul li .active > a,
+.mre-header-nav .mre-header-nav-collapse ul li .active > a,
+.mre-header-nav-collapse .mre-header-nav ul li .active > a,
 .navbar-dark .navbar-nav .mre-footer-nav ul li .active > a,
 .mre-footer-nav ul li .navbar-dark .navbar-nav .active > a,
+.mre-header-nav .navbar-nav .mre-footer-nav ul li .active > a,
+.mre-footer-nav ul li .mre-header-nav .navbar-nav .active > a,
 .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li .active > a,
 .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li .active > a,
 .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li .active > a,
 .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li .active > a,
+.mre-header-nav .mre-header-nav-collapse .mre-footer-nav ul li .active > a,
+.mre-footer-nav .mre-header-nav .mre-header-nav-collapse ul li .active > a,
+.mre-header-nav-collapse .mre-header-nav .mre-footer-nav ul li .active > a,
+.mre-footer-nav .mre-header-nav-collapse .mre-header-nav ul li .active > a,
 .navbar-dark .navbar-nav .nav-link.show,
+.mre-header-nav .navbar-nav .nav-link.show,
 .navbar-dark .mre-header-nav-collapse ul .nav-link.show,
 .mre-header-nav-collapse .navbar-dark ul .nav-link.show,
+.mre-header-nav .mre-header-nav-collapse ul .nav-link.show,
+.mre-header-nav-collapse .mre-header-nav ul .nav-link.show,
 .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a.show,
+.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.show,
+.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.show,
 .navbar-dark .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse .navbar-dark ul li a.show,
+.mre-header-nav .mre-header-nav-collapse ul li a.show,
+.mre-header-nav-collapse .mre-header-nav ul li a.show,
 .navbar-dark .navbar-nav .mre-footer-nav ul li a.show,
 .mre-footer-nav ul li .navbar-dark .navbar-nav a.show,
+.mre-header-nav .navbar-nav .mre-footer-nav ul li a.show,
+.mre-footer-nav ul li .mre-header-nav .navbar-nav a.show,
 .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a.show,
 .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a.show,
 .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a.show,
 .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a.show,
 .navbar-dark .navbar-nav .nav-link.active,
+.mre-header-nav .navbar-nav .nav-link.active,
 .navbar-dark .mre-header-nav-collapse ul .nav-link.active,
 .mre-header-nav-collapse .navbar-dark ul .nav-link.active,
+.mre-header-nav .mre-header-nav-collapse ul .nav-link.active,
+.mre-header-nav-collapse .mre-header-nav ul .nav-link.active,
 .navbar-dark .navbar-nav .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse ul li .navbar-dark .navbar-nav a.active,
+.mre-header-nav .navbar-nav .mre-header-nav-collapse ul li a.active,
+.mre-header-nav-collapse ul li .mre-header-nav .navbar-nav a.active,
 .navbar-dark .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse .navbar-dark ul li a.active,
+.mre-header-nav .mre-header-nav-collapse ul li a.active,
+.mre-header-nav-collapse .mre-header-nav ul li a.active,
 .navbar-dark .navbar-nav .mre-footer-nav ul li a.active,
 .mre-footer-nav ul li .navbar-dark .navbar-nav a.active,
+.mre-header-nav .navbar-nav .mre-footer-nav ul li a.active,
+.mre-footer-nav ul li .mre-header-nav .navbar-nav a.active,
 .navbar-dark .mre-header-nav-collapse .mre-footer-nav ul li a.active,
 .mre-footer-nav .navbar-dark .mre-header-nav-collapse ul li a.active,
 .mre-header-nav-collapse .navbar-dark .mre-footer-nav ul li a.active,
 .mre-footer-nav .mre-header-nav-collapse .navbar-dark ul li a.active {
   color: #fff; }
 
-.navbar-dark .navbar-toggler, .navbar-dark .mre-header-nav > button {
-  color: rgba(255, 255, 255, 0.5);
+.navbar-dark .navbar-toggler, .mre-header-nav .navbar-toggler, .navbar-dark .mre-header-nav > button, .mre-header-nav > button {
+  color: #b0bec5;
   border-color: rgba(255, 255, 255, 0.1); }
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+.navbar-dark .navbar-toggler-icon, .mre-header-nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23b0bec5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
-.navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.5); }
-  .navbar-dark .navbar-text a {
+.navbar-dark .navbar-text, .mre-header-nav .navbar-text {
+  color: #b0bec5; }
+  .navbar-dark .navbar-text a, .mre-header-nav .navbar-text a {
     color: #fff; }
-    .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+    .navbar-dark .navbar-text a:hover, .mre-header-nav .navbar-text a:hover, .navbar-dark .navbar-text a:focus, .mre-header-nav .navbar-text a:focus {
       color: #fff; }
 
 .card {
@@ -3758,10 +3771,10 @@ input[type="button"].btn-block {
     box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
 .badge-warning {
-  color: #212529;
+  color: #243238;
   background-color: #ffc107; }
   a.badge-warning:hover, a.badge-warning:focus {
-    color: #212529;
+    color: #243238;
     background-color: #d39e00; }
   a.badge-warning:focus, a.badge-warning.focus {
     outline: 0;
@@ -3778,10 +3791,10 @@ input[type="button"].btn-block {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 
 .badge-light {
-  color: #212529;
+  color: #243238;
   background-color: #f8f9fa; }
   a.badge-light:hover, a.badge-light:focus {
-    color: #212529;
+    color: #243238;
     background-color: #dae0e5; }
   a.badge-light:focus, a.badge-light.focus {
     outline: 0;
@@ -3966,7 +3979,7 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #212529;
+    color: #243238;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -4593,7 +4606,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529; }
+  color: #243238; }
 
 .carousel {
   position: relative; }
@@ -4850,14 +4863,12 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light, .mre-header-nav {
+.bg-light {
   background-color: #f8f9fa !important; }
 
-a.bg-light:hover, a.mre-header-nav:hover, a.bg-light:focus, a.mre-header-nav:focus,
+a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
-button.mre-header-nav:hover,
-button.bg-light:focus,
-button.mre-header-nav:focus {
+button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
@@ -7180,7 +7191,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important; }
 
 .text-body {
-  color: #212529 !important; }
+  color: #243238 !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -7228,7 +7239,7 @@ a.text-dark:hover, a.text-dark:focus {
     white-space: pre-wrap !important; }
   pre,
   blockquote {
-    border: 1px solid #adb5bd;
+    border: 1px solid #b0bec5;
     page-break-inside: avoid; }
   thead {
     display: table-header-group; }
@@ -7247,7 +7258,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; }
-  .container, .mre-footer-container {
+  .container, .mre-footer-container, .mre-availabilities-container {
     min-width: 992px !important; }
   .navbar, .mre-header-nav {
     display: none; }
@@ -7272,14 +7283,27 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.mre-header-nav {
+  background-color: #243238; }
+
 .mre-footer {
-  background-color: #212529; }
+  background-color: #243238; }
   .mre-footer-address, .mre-footer-nav, .mre-footer-social {
     margin-top: 30px;
     margin-bottom: 30px;
-    color: rgba(255, 255, 255, 0.5); }
+    color: #b0bec5; }
   .mre-footer-nav ul li a {
-    color: #adb5bd; }
+    color: #b0bec5; }
+
+.mre-availabilities-tabs-nav button {
+  background-color: #fff;
+  border-radius: 0 !important;
+  padding: 15px 20px;
+  margin: 0 2px;
+  min-width: 150px;
+  text-align: center;
+  border: none;
+  text-transform: capitalize; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

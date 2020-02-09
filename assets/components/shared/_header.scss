@@ -1,6 +1,7 @@
 .mre-header {
   &-nav {
-    @extend .navbar, .navbar-expand-lg, .navbar-light, .bg-light;
+    @extend .navbar, .navbar-expand-lg, .navbar-dark;
+    background-color: $gray-900;
     > a {
 
     }
