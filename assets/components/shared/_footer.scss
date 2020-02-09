@@ -1,0 +1,31 @@
+.mre-footer {
+  background-color: $gray-900;
+  &-container {
+    @extend .container;
+  }
+  &-row {
+    @extend .row;
+  }
+  &-address, &-nav, &-social {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @extend .col-sm-12, .col-md-4, .col-lg-4, .col-xl-4;
+    color: $navbar-dark-color;
+  }
+  &-nav {
+    ul {
+      @extend .nav, .flex-column;
+      li {
+        @extend .nav-item;
+
+        a {
+          @extend .nav-link;
+          color: $gray-500;
+        }
+      }
+    }
+  }
+  &-social {
+
+  }
+}

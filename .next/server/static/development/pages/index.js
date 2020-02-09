@@ -88,10 +88,41 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/partials/availabilities.tsx":
+/*!************************************************!*\
+  !*** ./components/partials/availabilities.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Availabilities; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/patrick/Projets/enclos-front/components/partials/availabilities.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+class Availabilities extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    });
+  }
+
+}
+
+/***/ }),
 
 /***/ "./pages/index.tsx":
 /*!*************************!*\
@@ -105,32 +136,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_partials_availabilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/partials/availabilities */ "./components/partials/availabilities.tsx");
 var _jsxFileName = "/Users/patrick/Projets/enclos-front/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  static async getInitialProps({
+    req
+  }) {
+    const title = 'Accueil';
+    return {
+      title
+    };
+  }
+
   render() {
-    return __jsx("div", {
-      className: "example",
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_partials_availabilities__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6
+        lineNumber: 17
       },
       __self: this
-    }, __jsx("h1", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, "Accueil"));
+    }));
   }
 
 }
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/

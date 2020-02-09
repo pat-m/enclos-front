@@ -93,67 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/shared/footer.tsx":
-/*!**************************************!*\
-  !*** ./components/shared/footer.tsx ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/patrick/Projets/enclos-front/components/shared/footer.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("footer", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, "Footer");
-  }
-
-}
-
-/***/ }),
-
-/***/ "./components/shared/header.tsx":
-/*!**************************************!*\
-  !*** ./components/shared/header.tsx ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/patrick/Projets/enclos-front/components/shared/header.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("header", {
-      className: "header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, "Header");
-  }
-
-}
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/next-server/lib/constants.js":
 /*!*************************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/constants.js ***!
@@ -1126,13 +1065,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MyDocument; });
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_shared_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/shared/header */ "./components/shared/header.tsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_shared_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/shared/footer */ "./components/shared/footer.tsx");
-var _jsxFileName = "/Users/patrick/Projets/enclos-front/pages/_document.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -1140,60 +1072,18 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
-
-
 class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_0___default.a {
   static async getInitialProps(ctx) {
     const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_0___default.a.getInitialProps(ctx);
     return _objectSpread({}, initialProps);
-  }
+  } // render() {
+  //     return (
+  //         <Html>
+  //
+  //         </Html>
+  //     )
+  // }
 
-  render() {
-    return __jsx("html", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["Head"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }), __jsx("body", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, __jsx(_components_shared_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["Main"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }), __jsx(_components_shared_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["NextScript"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    })));
-  }
 
 }
 

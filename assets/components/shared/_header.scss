@@ -1,0 +1,23 @@
+.mre-header {
+  &-nav {
+    @extend .navbar, .navbar-expand-lg, .navbar-light, .bg-light;
+    > a {
+
+    }
+    > button {
+      @extend .navbar-toggler;
+    }
+    &-collapse {
+      @extend .collapse, .navbar-collapse;
+      ul {
+        @extend .navbar-nav, .ml-auto;
+        li {
+          @extend .nav-item;
+          a {
+            @extend .nav-link;
+          }
+        }
+      }
+    }
+  }
+}
